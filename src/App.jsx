@@ -15,7 +15,7 @@ function App() {
           IT-CENTER o`quvchilari{" "}
         </h2>
         <FormCreate />
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5" >
           {isLoading ? (
             <Loading />
           ) : isError ? (
@@ -25,7 +25,7 @@ function App() {
               <StudentCard key={index} student={student} />
             ))
           ) : (
-            <h2 className="text-center text-2xl">Studentlar mavjud emas</h2>
+            <h2 className="text-center text-2xl w-full justify-center">Studentlar mavjud emas</h2>
           )}
         </div>
       </div>
